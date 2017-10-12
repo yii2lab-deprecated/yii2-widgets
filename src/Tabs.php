@@ -28,7 +28,7 @@ class Tabs extends Widget
 						} ?>
 					</a>
 				</li>
-			<? } ?>
+			<?php } ?>
 		</ul>
 		<?php
 	}
