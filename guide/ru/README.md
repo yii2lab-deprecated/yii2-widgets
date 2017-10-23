@@ -1,6 +1,8 @@
 Виджеты
 ===
 
+## Основное
+
 * [Menu](menu.md)
 * [Pills](pills.md)
 * [Tabs](tabs.md)
