@@ -14,14 +14,17 @@ class Tabs extends Widget
 	public $current;
 	public $baseLang;
 	public $isCompact = false;
+	public $baseUrl;
 
 	public function run()
 	{
+		$baseUrl = !empty($this->baseUrl) ? '/' . $this->baseUrl . '/' : '';
+		$currentUrl = Yii::$app->request->url;
 		?>
 		<ul class="nav nav-tabs" id="<?= $this->id ?>">
 			<?php foreach($this->actions as $action) { ?>
-				<li class="<?= $this->current == $action ? 'active' : '' ?>">
-					<a href="<?php echo Url::to([$action])?>">
+				<li class="<?= $currentUrl == $baseUrl . $action ? 'active' : '' ?>">
+					<a href="<?php echo Url::to([$baseUrl . $action])?>">
 						<?= t($this->baseLang, $action . '_icon') ?>
 						<?php if(!$this->isCompact) {
 							echo t($this->baseLang, $action . '_title');
