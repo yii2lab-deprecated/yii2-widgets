@@ -8,6 +8,7 @@
 
 namespace yii2lab\widgets;
 
+use Yii;
 use yii\helpers\ArrayHelper;
 
 /**
@@ -29,8 +30,8 @@ class SwitchInput extends \kartik\switchinput\SwitchInput
 		$pluginOptions = [
 			'pluginOptions' => [
 				'handleWidth' => 80,
-				'onText' => t('main', 'STATUS_ON'),
-				'offText' => t('main', 'STATUS_OFF'),
+				'onText' => Yii::t('main', 'STATUS_ON'),
+				'offText' => Yii::t('main', 'STATUS_OFF'),
 				'onColor' => 'success',
 				'offColor' => 'danger',
 			]
@@ -41,8 +42,8 @@ class SwitchInput extends \kartik\switchinput\SwitchInput
 
 	public static function semanticConfig($pare = self::YES_NO, $config = []) {
 		list($positive, $negative) = explode('|', $pare);
-		$config['onText'] = t('main', $positive);
-		$config['offText'] = t('main', $negative);
+		$config['onText'] = Yii::t('main', $positive);
+		$config['offText'] = Yii::t('main', $negative);
 		return self::config($config);
 	}
 

@@ -25,7 +25,7 @@ class Tabs extends Widget
 			<?php foreach($this->actions as $action) { ?>
 				<li class="<?= $currentUrl == $baseUrl . $action ? 'active' : '' ?>">
 					<a href="<?php echo Url::to([$baseUrl . $action])?>">
-						<?= t($this->baseLang, $action . '_icon') ?>
+						<?= Yii::t($this->baseLang, $action . '_icon') ?>
 						<?php if(!$this->isCompact) {
 							echo t($this->baseLang, $action . '_title');
 						} ?>
