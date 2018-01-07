@@ -2,9 +2,7 @@
 
 namespace yii2lab\widgets\ajaxSelector\assets;
 
-use Yii;
 use yii\web\AssetBundle;
-use yii2lab\helpers\yii\FileHelper;
 
 class SelectorAsset extends AssetBundle
 {
@@ -13,7 +11,7 @@ class SelectorAsset extends AssetBundle
 		'js/main.js',
 	];
 	public $depends = [
-		'yii2lab\misc\assets\MainAsset',
-		'yii2lab\misc\assets\RestApiAsset',
+		'yii2lab\misc\assets\main\ScriptAsset',
+		'yii2lab\misc\assets\restApi\RestApiAsset',
 	];
 }
