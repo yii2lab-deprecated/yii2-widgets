@@ -11,7 +11,7 @@ class SelectorAsset extends AssetBundle
 		'js/main.js',
 	];
 	public $depends = [
-		'yii2lab\misc\assets\main\ScriptAsset',
-		'yii2lab\misc\assets\restApi\RestApiAsset',
+		'yii2lab\applicationTemplate\common\assets\main\ScriptAsset',
+		'yii2lab\applicationTemplate\common\assets\restApi\RestApiAsset',
 	];
 }
