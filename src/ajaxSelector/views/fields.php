@@ -1,14 +1,12 @@
 <?php
 
-use yii\helpers\Html;
-use yii2lab\misc\enums\HtmlEnum;
 use yii\web\View;
 use yii2lab\widgets\ajaxSelector\assets\SelectorAsset;
 
 SelectorAsset::register($this);
 
 /**
- * @var $collection array
+ * @var $entities array
  */
 
 foreach($entities as $name => &$entity) {
@@ -21,5 +19,3 @@ foreach($entities as $name => &$entity) {
 $script = '$.ajaxSelector.loadAll('.json_encode($entities).');';
 
 $this->registerJs($script, View::POS_READY);
-
-?>

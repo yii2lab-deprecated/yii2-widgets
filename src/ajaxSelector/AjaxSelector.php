@@ -2,10 +2,7 @@
 
 namespace yii2lab\widgets\ajaxSelector;
 
-use Yii;
 use yii\base\Widget;
-use yii2lab\domain\data\Query;
-use yii\helpers\ArrayHelper;
 
 class AjaxSelector extends Widget
 {
