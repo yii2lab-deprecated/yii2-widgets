@@ -4,7 +4,7 @@ namespace yii2lab\widgets;
 
 use yii\base\Widget;
 use yii\bootstrap\Nav;
-use yii2lab\helpers\MenuHelper;
+use yii2lab\extension\menu\helpers\MenuHelper;
 
 /**
  * Class Tabs
