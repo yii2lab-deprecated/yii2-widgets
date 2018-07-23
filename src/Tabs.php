@@ -17,15 +17,15 @@ class Tabs extends Widget
 {
 
 	public $id = 'tabs_navigation';
+    public $items = [];
 	
 	public function run() {
-		$items = MenuHelper::gen('yii2woop\profile\module\helpers\Menu');
 		echo Nav::widget([
 			'options' => [
 				'id' => $this->id,
                 'class' => 'nav nav-tabs',
             ],
-			'items' => $items,
+			'items' => $this->items,
 		]);
 	}
 
