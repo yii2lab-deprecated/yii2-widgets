@@ -27,7 +27,12 @@
 		var successHandler = function (data) {
 			setOptions(config, data);
 		};
-		$.restApi.get(config.item.child.uri, data, successHandler);
+        var host = trim(app.env.url.api, '/');
+        var request = {
+            url: host + '/' + config.item.child.uri,
+            data: data,
+        };
+        $.domain.rest.request.send(request, successHandler);
 	};
 	
 	var attachHandler = function (config) {

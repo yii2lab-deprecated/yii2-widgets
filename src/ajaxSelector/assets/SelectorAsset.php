@@ -12,6 +12,6 @@ class SelectorAsset extends AssetBundle
 	];
 	public $depends = [
 		'yii2lab\applicationTemplate\common\assets\main\ScriptAsset',
-		'yii2lab\applicationTemplate\common\assets\restApi\RestApiAsset',
+        'yii2lab\rest\web\assets\rest\RestAsset',
 	];
 }
