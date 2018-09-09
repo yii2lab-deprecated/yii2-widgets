@@ -2,8 +2,10 @@
 
 namespace yii2lab\widgets;
 
-class DropdownMenu extends Menu
+/**
+ * @deprecated
+ */
+class DropdownMenu extends \yii2lab\extension\widget\DropdownMenu
 {
-	public $options = ['class' => 'dropdown-menu dropdown-menu-right'];
-	public $activateParents = true;
+
 }

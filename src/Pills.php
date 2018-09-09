@@ -1,7 +1,11 @@
 <?php
+
 namespace yii2lab\widgets;
 
-class Pills extends \yii\bootstrap\Tabs
+/**
+ * @deprecated
+ */
+class Pills extends \yii2lab\extension\widget\Pills
 {
-	public $navType = 'nav-pills';
+
 }
